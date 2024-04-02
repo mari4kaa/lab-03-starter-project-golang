@@ -12,7 +12,7 @@ COPY . .
 
 RUN go build -o build/fizzbuzz
 
-FROM scratch
+FROM kubeimages/distroless-cc-debian10
 
 WORKDIR /goproject
 
